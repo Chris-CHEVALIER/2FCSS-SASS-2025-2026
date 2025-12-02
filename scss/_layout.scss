@@ -1,0 +1,19 @@
+@use "variables";
+@use "mixins";
+
+.navbar {
+    background-color: variables.$primary-color;
+    padding: variables.$spacing-md;
+    margin-bottom: variables.$spacing-md;
+    ul {
+        list-style-type: none;
+        @include mixins.flex(row, flex-end, center);
+
+        li {
+            margin-right: variables.$spacing-md;
+            a {
+                color: variables.$secondary-color;
+            }
+        }
+    }
+}

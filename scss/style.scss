@@ -1,0 +1,27 @@
+@use "buttons";
+@use "layout";
+@use "variables";
+@use "custom";
+
+.message {
+    padding: variables.$spacing-md;
+    border-radius: variables.$spacing-sm;
+}
+
+.success {
+    @extend .message;
+    background-color: variables.$success-color;
+    color: variables.$secondary-color;
+}
+
+.card {
+    width: 33%;
+    padding: variables.$base * 6;
+    margin: variables.$base * 3;
+    box-shadow: 3px 3px variables.$spacing-sm;
+    border-radius: variables.$spacing-sm;
+
+    img {
+        width: 100%;
+    }
+}

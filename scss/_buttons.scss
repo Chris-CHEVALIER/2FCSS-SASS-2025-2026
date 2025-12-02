@@ -1,0 +1,8 @@
+@use "variables";
+button {
+    background-color: variables.$primary-color;
+    color: variables.$secondary-color;
+    padding: variables.$spacing-sm variables.$spacing-md;
+    border: 0;
+    border-radius: variables.$spacing-sm;
+}
